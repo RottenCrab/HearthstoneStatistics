@@ -1,0 +1,24 @@
+{
+  "standard_sets": {
+      "bsc": "Basic",
+      "cls": "Classic",
+      "tww": "The Witchwood",
+      "tbp": "The Boomsday Project",
+      "rr": "Rastakhan's Rumble",
+      "ros": "Rise of Shadows"
+  },
+  "wild_sets": {
+      "hof": "Hall of Fame",
+      "con": "Naxxramas",
+      "gvg": "Goblins vs Gnomes",
+      "bm": "Blackrock Mountain",
+      "tgt": "The Grand Tournament",
+      "loe": "The League of Explorers",
+      "wog": "Whispers of the Old Gods",
+      "onk": "One Night in Karazhan",
+      "msg": "Mean Streets of Gadgetzan",
+      "jtug": "Journey to Un'Goro",
+      "kft": "Knights of the Frozen Throne",
+      "k&c": "Kobolds & Catacombs"
+  }
+}
