@@ -45,3 +45,6 @@ Feel free to contact me about things you would like to see in the future (eg. ca
 
 * Email: [rottencrab.eu@gmail.com](rottencrab.eu@gmail.com)
 * Twitter: [rottecrab_dev](https://twitter.com/rottencrab_dev)
+
+### Credits
+In order to draw the Card Sets I used [HearthstoneAPI](https://hearthstoneapi.com/) which helped me a lot and made my life a lot easier! Thank you HearthstoneAPI!
