@@ -56,7 +56,7 @@ def conjcall_avg_stats(hs_format,
 
     plt.ylim(0, 12)
     if save:
-        filename = 'conj_calling_avg_stats({}).png'.format(hs_format)
+        filename = 'conj_calling_avg_stats_{}.png'.format(hs_format)
         plt.savefig('../Plots/' + filename)
     if show:
         plt.tight_layout()
@@ -92,7 +92,7 @@ def conjcall_taunt_probability(hs_format,
     # Set limits for Y Axis
     plt.ylim(0, taunt_prob_df['taunt_prob'].max() + 5)  # This will never be greater than 100
     if save:
-        filename = 'conj_calling_taunt_prob({0}).png'.format(hs_format)
+        filename = 'conj_calling_taunt_prob_{0}.png'.format(hs_format)
         plt.savefig('../Plots/' + filename)
     if show:
         plt.tight_layout()
