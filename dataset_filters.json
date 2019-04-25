@@ -40,5 +40,37 @@
     "bonemare",
     "fossilized devilsaur",
     "houndmaster"
+  ],
+  "charge_filters": [
+    "tundra rhino",
+    "warsong commander",
+    "druid of the saber",
+    "druid of the claw",
+    "alexstrasza's champion",
+    "southsea deckhand",
+    "armored warhorse",
+    "tanaris hogchopper",
+    "spiked hogrider",
+    "leatherclad hogleader",
+    "icehowl"
+  ],
+  "rush_filters": [
+    "druid of the scythe",
+    "houndmaster shaw",
+    "halazzi, the lynx",
+    "underbelly fence",
+    "blightnozzle crawler",
+    "captain hooktush",
+    "thunderhead",
+    "fel lord betrug",
+    "spirit of the rhino",
+    "town crier",
+    "the boom reaver",
+    "spark engine",
+    "magic carpet",
+    "portal keeper",
+    "scaleworm",
+    "portal overfiend",
+    "countess ashmore"
   ]
 }
