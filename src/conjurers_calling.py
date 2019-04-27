@@ -8,10 +8,13 @@ import functions
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 FILTERS = 'dataset_filters.json'
 
+# TODO: Code Refactoring (remove duplicate code blocks) | Refactoring will be implemented in a different branch
 
 class ConjCalling:
     KEYWORD_FILTERS = 'dataset_filters.json'
     TAUNT_FILTERS = 'taunt_filters'
+    RUSH_FILTERS = 'rush_filters'
+    CHARGE_FILTERS = 'charge_filters'
     nan_replacements = {'attack': 0,
                         'text': ' '
                         }
@@ -56,10 +59,11 @@ class ConjCalling:
         return conj_calling_pool
 
     def _taunt_pool(self):
+        # Duplicate to _rush_pool & _charge_pool functions (need refactoring)
         taunt_filters = self._import_filters(ConjCalling.TAUNT_FILTERS)
         taunt_pool = self.card_pool[self.card_pool['text'].str.contains('taunt', case=False)]
-        for filter in taunt_filters:
-            taunt_pool = taunt_pool[~taunt_pool.name.str.contains(filter, case=False)]
+        for flt in taunt_filters:
+            taunt_pool = taunt_pool[~taunt_pool.name.str.contains(flt, case=False)]
         return taunt_pool
 
     def avg_stats(self):
@@ -84,7 +88,14 @@ class ConjCalling:
     def total_taunts(self):
         return len(self._taunt_pool().index)
 
+    def total_rush(self):
+        return len(self._rush_pool().index)
+
+    def total_charge(self):
+        return len(self._charge_pool().index)
+
     def taunt_probability(self):
+        # Duplicate to rush_probability & charge_probability (needs refactoring)
         taunt_pool = self._taunt_pool()
         taunt_probabilities = {}
         for mana_cost in range(0, 13):
@@ -99,17 +110,60 @@ class ConjCalling:
                 taunt_probabilities[mana_cost] = probability
         return taunt_probabilities
 
+    def _rush_pool(self):
+        # Duplicate to _taunt_pool & _charge_pool (needs refactoring)
+        rush_filters = self._import_filters(ConjCalling.RUSH_FILTERS)
+        rush_pool = self.card_pool[self.card_pool['text'].str.contains('rush', case=False)]
+        for flt in rush_filters:
+            rush_pool = rush_pool[~rush_pool.name.str.contains(flt, case=False)]
+        return rush_pool
+
     def rush_probability(self):
-        pass
+        # Duplicate to taunt_probability & charge_probability (needs refactoring)
+        rush_pool = self._rush_pool()
+        rush_probabilities = {}
+        for mana_cost in range(0, 13):
+            probability = 0
+            minions = len(self.card_pool[self.card_pool['cost'] == mana_cost].index)
+            rush_minions = len(rush_pool[rush_pool['cost'] == mana_cost])
+            try:
+                probability = round(rush_minions / minions, 2)
+            except ZeroDivisionError:
+                probability = 0
+            finally:
+                rush_probabilities[mana_cost] = probability
+        return rush_probabilities
+
+    def _charge_pool(self):
+        # Duplicate to _taunt_pool & _rush_pool (needs refactoring)
+        charge_filters = self._import_filters(ConjCalling.CHARGE_FILTERS)
+        charge_pool = self.card_pool[self.card_pool['text'].str.contains('charge', case=False)]
+        for flt in charge_filters:
+            charge_pool = charge_pool[~charge_pool.name.str.contains(flt, case=False)]
+        return charge_pool
 
     def charge_probability(self):
-        pass
+        # Duplicate to taunt_probability & rush_probability (needs refactoring)
+        charge_pool = self._charge_pool()
+        charge_probabilities = {}
+        for mana_cost in range(0, 13):
+            probability = 0
+            minions = len(self.card_pool[self.card_pool['cost'] == mana_cost].index)
+            charge_minions = len(charge_pool[charge_pool['cost'] == mana_cost])
+            try:
+                probability = round(charge_minions / minions, 2)
+            except ZeroDivisionError:
+                probability = 0
+            finally:
+                charge_probabilities[mana_cost] = probability
+        return charge_probabilities
 
 
 if __name__ == '__main__':
     obj = ConjCalling('Standard')
-    print(obj.total_taunts())
-    pprint(obj.taunt_probability())
-    pprint(obj.avg_stats())
+    pprint(obj.rush_probability())
+    pprint(obj.charge_probability())
+    print('Total Rush: ' + str(obj.total_rush()))
+    print('Total Charge: ' + str(obj.total_charge()))
 
 # end of file
