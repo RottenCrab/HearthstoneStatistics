@@ -8,7 +8,6 @@ import functions
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 FILTERS = 'dataset_filters.json'
 
-# TODO: Code Refactoring (remove duplicate code blocks) | Refactoring will be implemented in a different branch
 
 class ConjCalling:
     KEYWORD_FILTERS = 'dataset_filters.json'
