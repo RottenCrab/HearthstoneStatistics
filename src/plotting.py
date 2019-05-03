@@ -141,6 +141,7 @@ def probabilities(hs_format,
         probability_df = probability_df.append({'mana_cost': int(key),
                                                 'probability': value * 100},
                                                ignore_index=True)
+    probability_df.mana_cost = probability_df.mana_cost.astype(int)
     # End of DataFrame Construction
     # Creating a Seaborn BarPlot to visualize DataFrame's data
     # X Axis Mana Cost
