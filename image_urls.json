@@ -1,0 +1,18 @@
+{
+  "avg_stats_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/avg_stats_standard_format.png",
+  "avg_stats_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/avg_stats_wild_format.png",
+  "charge_probability_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/charge_probability_standard_format.png",
+  "charge_probability_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/charge_probability_wild_format.png",
+  "rush_probability_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/rush_probability_standard_format.png",
+  "rush_probability_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/rush_probability_wild_format.png",
+  "taunt_probability_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/taunt_probability_standard_format.png",
+  "taunt_probability_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/taunt_probability_wild_format.png",
+  "taunt_minions_per_mana_cost_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/taunt_minions_per_mana_cost_standard_format.png",
+  "taunt_minions_per_mana_cost_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/taunt_minions_per_mana_cost_wild_format.png",
+  "rush_minions_per_mana_cost_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/rush_minions_per_mana_cost_standard_format.png",
+  "rush_minions_per_mana_cost_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/rush_minions_per_mana_cost_wild_format.png",
+  "charge_minions_per_mana_cost_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/charge_minions_per_mana_cost_standard_format.png",
+  "charge_minions_per_mana_cost_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/charge_minions_per_mana_cost_wild_format.png",
+  "total_minions_per_mana_cost_standard_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/total_minions_per_mana_cost_standard_format.png",
+  "total_minions_per_mana_cost_wild_format": "https://github.com/RottenCrab/HearthstoneStatistics/blob/proj-refactoring/Plotting/total_minions_per_mana_cost_wild_format.png"
+}
