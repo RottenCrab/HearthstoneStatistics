@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import os
-from card_pool import CardPool
+
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -19,6 +19,50 @@ def save_plot(plot_type,
 
 def format_format_title(wrd):
     return wrd.split('_')[0].title()
+
+
+def minion_distribution(hs_format,
+                        minion_dict,
+                        keyword='Total',
+                        show=False,
+                        save=False):
+    minion_columns = ['mana_cost', 'minions']
+    minion_df = pd.DataFrame(columns=minion_columns)
+    for key, value in minion_dict.items():
+        minion_df = minion_df.append({'mana_cost': key,
+                                      'minions': value},
+                                     ignore_index=True)
+    ax = sns.barplot(x="mana_cost", y="minions", data=minion_df, palette='pastel')
+    # Customize X & Y Axis Labels and the title of the Plot
+    ax.set(xlabel='Mana Cost',
+           ylabel='Total Minions',
+           title='{} Minions per Mana Cost ({})'.format(keyword.title(),
+                                                        format_format_title(hs_format)))
+    # Now we will annotate the top of the bars with their corresponding value
+    # Setting up bar annotation
+    xpos = 'center'
+    xpos = xpos.lower()  # normalize the case of the parameter
+    ha = {'center': 'center', 'right': 'left', 'left': 'right'}
+    offset = {'center': 0.5, 'right': 0.57, 'left': 0.43}  # x_txt = x + w*off
+    # Annotate the top of the bars with their corresponding values
+    for rect in ax.patches:
+        height = int(rect.get_height())
+        if height == 0:
+            continue
+        ax.text(rect.get_x() + rect.get_width() * offset[xpos], 1.01 * height,
+                '{}'.format(height), ha=ha[xpos], va='bottom')
+
+    lim = minion_df['minions'].max() + minion_df['minions'].max() * 0.15
+    plt.ylim(0, lim)
+    if save:
+        # filename = 'avg_stats_{}.png'.format(hs_format)
+        # plt.savefig('../Plotting/' + filename)
+        save_plot('{}_minions_per_mana_cost'.format(keyword.lower()),
+                  hs_format,
+                  '../Plotting/')
+    if show:
+        plt.tight_layout()
+        plt.show()
 
 
 def avg_stats(hs_format,
@@ -123,15 +167,5 @@ def probabilities(hs_format,
     if show:
         plt.tight_layout()
         plt.show()
-
-
-# Testing Zone
-
-
-if __name__ == '__main__':
-    avg_stats('wild_format', show=True)
-    probabilities('wild_format', 'taunt', show=True)
-    probabilities('wild_format', 'rush', show=True)
-    probabilities('wild_format', 'charge', show=True)
 
 # end of file
