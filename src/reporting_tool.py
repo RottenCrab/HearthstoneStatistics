@@ -1,5 +1,5 @@
 from string import Template
-from .json_handler import read_json
+from json_handler import read_json
 import os
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
