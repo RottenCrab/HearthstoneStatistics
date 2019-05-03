@@ -56,10 +56,10 @@ def minion_distribution(hs_format,
     plt.ylim(0, lim)
     if save:
         # filename = 'avg_stats_{}.png'.format(hs_format)
-        # plt.savefig('../Plotting/' + filename)
+        # plt.savefig('../Plots/' + filename)
         save_plot('{}_minions_per_mana_cost'.format(keyword.lower()),
                   hs_format,
-                  '../Plotting/')
+                  '../Plots/')
     if show:
         plt.tight_layout()
         plt.show()
@@ -116,10 +116,10 @@ def avg_stats(hs_format,
     plt.ylim(0, 12)
     if save:
         # filename = 'avg_stats_{}.png'.format(hs_format)
-        # plt.savefig('../Plotting/' + filename)
+        # plt.savefig('../Plots/' + filename)
         save_plot('avg_stats',
                   hs_format,
-                  '../Plotting/')
+                  '../Plots/')
     if show:
         plt.tight_layout()
         plt.show()
@@ -160,10 +160,10 @@ def probabilities(hs_format,
     if save:
         # filename = '{keyword}_probability_{hs_format}.png'.format(keyword=keyword.title(),
         #                                                           hs_format=hs_format)
-        # plt.savefig('../Plotting/' + filename)
+        # plt.savefig('../Plots/' + filename)
         save_plot('{key}_probability'.format(key=keyword),
                   hs_format,
-                  '../Plotting/')
+                  '../Plots/')
     if show:
         plt.tight_layout()
         plt.show()
