@@ -1,8 +1,8 @@
 from card_pool import CardPool
 from reporting_tool import reporting
-from dt_viz import (avg_stats,
-                    probabilities,
-                    minion_distribution)
+from plotting import (avg_stats,
+                      probabilities,
+                      minion_distribution)
 
 
 def report_run():
@@ -59,6 +59,5 @@ def report_run():
 
 if __name__ == '__main__':
     report_run()
-
 
 # end of file
