@@ -1,6 +1,7 @@
 from card_pool import CardPool
 from dt_viz import (avg_stats,
-                    probabilities)
+                    probabilities,
+                    minion_distribution)
 
 
 def report_run():
@@ -9,6 +10,7 @@ def report_run():
         'rush',
         'charge'
     ]
+
     formats = [
         'standard_format',
         'wild_format'
@@ -24,6 +26,25 @@ def report_run():
                   card_pool_obj[hs_format].avg_stats(),
                   show=True,
                   save=True)
+        minion_distribution(hs_format,
+                            card_pool_obj[hs_format].total_minion_per_mana_cost,
+                            show=True,
+                            save=True)
+        minion_distribution(hs_format,
+                            card_pool_obj[hs_format].total_taunt_per_mana_cost,
+                            keyword='taunt',
+                            show=True,
+                            save=True)
+        minion_distribution(hs_format,
+                            card_pool_obj[hs_format].total_rush_per_mana_cost,
+                            keyword='rush',
+                            show=True,
+                            save=True)
+        minion_distribution(hs_format,
+                            card_pool_obj[hs_format].total_charge_per_mana_cost,
+                            keyword='charge',
+                            show=True,
+                            save=True)
         for keyword in keywords:
             probabilities(hs_format,
                           keyword,
