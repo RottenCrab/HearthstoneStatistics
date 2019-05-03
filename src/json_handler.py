@@ -13,6 +13,8 @@ def read_json(target_file,
         key = list(file_content.keys())[0]
         value = file_content[key]
         return key, value
+    if json_key is 'all_keys':
+        return file_content
     value = file_content[json_key]
     return value
 
