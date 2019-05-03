@@ -4,9 +4,7 @@ import functions
 from custom_exceptions import UnsupportedHearthstoneFormat, UnknownKeyword
 from json_handler import read_json
 from math import isnan
-from pprint import pprint
-# TODO Create a function for .md Files (Write a Report)
-# TODO Remove "Test Zones" from every file in the package
+
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -193,25 +191,5 @@ class CardPool:
 
     def report(self):
         pass
-
-
-# TESTING ZONE
-
-
-if __name__ == '__main__':
-    cards = CardPool('standard_format')
-    print('Total Minions per Mana Cost: ')
-    pprint(cards.total_minion_per_mana_cost)
-    print('*' * 50)
-    print('Total Taunts per Mana Cost:')
-    pprint(cards.total_taunt_per_mana_cost)
-    print('*' * 50)
-    print('Total Rush per Mana Cost:')
-    pprint(cards.total_rush_per_mana_cost)
-    print('*' * 50)
-    print('Total charge per Mana Cost:')
-    pprint(cards.total_charge_per_mana_cost)
-    print('*' * 50)
-
 
 # end of file

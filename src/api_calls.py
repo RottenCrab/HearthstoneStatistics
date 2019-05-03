@@ -1,5 +1,5 @@
 from requests import get
-from credentials import retrieve_credentials
+from json_handler import read_json
 
 
 # API Calls to HearthstoneAPI
@@ -7,8 +7,8 @@ from credentials import retrieve_credentials
 
 class Caller:
     def __init__(self, api_host, api_key):
-        self.host_key, self.host_value = retrieve_credentials(api_host)
-        self.api_key, self.api_key_value = retrieve_credentials(api_key)
+        self.host_key, self.host_value = read_json(target_file=api_host)
+        self.api_key, self.api_key_value = read_json(target_file=api_key)
         self.headers = {self.host_key: self.host_value,
                         self.api_key: self.api_key_value}
 
