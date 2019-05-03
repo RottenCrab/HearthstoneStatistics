@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import functions
+import card_collector
 from custom_exceptions import UnsupportedHearthstoneFormat, UnknownKeyword
 from json_handler import read_json
 from math import isnan
@@ -62,9 +62,9 @@ class CardPool:
         cards_df = pd.DataFrame()
         dataset = {}
         if self.__is_std_format():
-            dataset = functions.collect_std_sets()
+            dataset = card_collector.collect_std_sets()
         else:
-            dataset = functions.collect_wild_sets()
+            dataset = card_collector.collect_wild_sets()
         for key, value in dataset.items():
             cards_df = cards_df.append(pd.DataFrame(data=value),
                                        ignore_index=True,
