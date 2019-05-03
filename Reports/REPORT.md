@@ -1,6 +1,7 @@
 # Hearthstone Report : Minion Distribution per Mana Cost
 ****
 **Current Hearthstone Year:** [*Year of the Dragon*](https://hearthstone.gamepedia.com/Standard_format#Year_of_the_Dragon)
+
 **Current Expansion:** [*Rise of Shadows*](https://playhearthstone.com/en-gb/expansions-adventures/rise-of-shadows)
 ****
 
