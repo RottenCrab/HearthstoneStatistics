@@ -1,43 +1,45 @@
 ## Hearthstone Statistics
 Since the release of [Rise of Shadows](https://playhearthstone.com/en-us/expansions-adventures/rise-of-shadows/) [Hearhtstone expansion](https://playhearthstone.com/en-us/) I have noticed that many players are wondering the odds of getting a Taunt, Rush, Charge or even Deathrattle Minion from Conjurer's Calling Mage Spell. Then, I remembered that back in the day when Evolve (also Unstable Evolution and now Mutate is introduced to the Standard Format) was a Standard Card players were facing the same issue. Knowing the chances of summoning a random minion with a certain keyword on each Mana Cost sometimes may win you the game.
 
-I decided to make a Project to demonstrate Statistics like these (using simple plots) to help players make decisions when the time comes. So, the main purpose of this very project is to help players knowing their chances of getting what they want when they are using cards like Evolve, Devolve, Unstable Evolution, Mutate and Conjurer's Calling.
+I decided to create this Project to demonstrate Statistics like these (using simple plots) to help players make decisions when the time comes. So, the main purpose of this very repository is to help players knowing their chances of getting what they want when they are using cards like Evolve, Devolve, Unstable Evolution, Mutate and Conjurer's Calling.
 
-## Features
+## How to Use
 
-#### Conjurer's Calling Statistics
-Since [Conjurer's Calling](https://hearthstone.gamepedia.com/Conjurer%27s_Calling) is currently used in Standard Format with from a decent perchentage of players, I decided to started working on it first.
+In this Repository you can find Reports, Plots and Spreadsheets which contain information about the distribution of minions per Mana Cost (from 0 Mana Cost up to 12 Mana Cost, since 20 and 25 Mana Cost cards cannot be generated through any current cards) in both Standard and Wild Format which are easy to understand. Then you can utilize those resources in order to be aware of:
+ 
+* Average Minion Stats per Mana Cost (what you stats you should expect when you summon a random minion of a certain Mana Cost)
+* Total Collectible Minions per Mana Cost
+* Total **Taunt** Minions per Mana Cost
+* Total **Rush** Minions per Mana Cost
+* Total **Charge** Minions per Mana Cost
+* **Taunt** Probability per Mana Cost
+* **Rush** Probability per Mana Cost
+* **Charge** Probability per Mana Cost
+* Total available Minions in Standard Format (Collectible only)
+* Total available Minions in Wild Format (Collectible only)
 
-So far you can find the following plots [here](https://github.com/RottenCrab/HearthstoneStatistics/tree/master/Plots):
-* Average Stats for summoned minions per Mana Cost for Conjurer's Calling 
-* Taunt Probability for summoned minions per Mana Cost for Conjurer's Calling
+Having all information mentioned above can help you play your outs better when it comes to decision making based on Random Minion Summoning or Transformation Effects. Here are some cards which are related to Radom Minion Summoning and Transformation:
 
-Soon I will be making plots for more statistcs over Conjurer's Calling. I already have on the works the following plots:
-* Rush Probability for summoned minions per Mana Cost for Conjurer's Calling
-* Charge Probability for summoned minions per Mana Cost for Conjurer's Calling
-* Deathrattle Probability for summoned minions per Mana Cost for Conjurer's Calling
-* Best possible minion outcome for Conjurer's Calling per Mana Cost
-* Worst possivle minion outcome for Conjurer's Calling per Mana Cost
+* [Evolve (Wild)](https://hearthstone.gamepedia.com/Evolve)
+* [Unstable Evolution (Wild)](https://hearthstone.gamepedia.com/Unstable_Evolution)
+* [Mutate (Standard)](https://hearthstone.gamepedia.com/Mutate)
+* [Conjurer's Calling (Standard)](https://hearthstone.gamepedia.com/Conjurer%27s_Calling)
+* [Witchy Lackey (Standard)](https://hearthstone.gamepedia.com/Witchy_Lackey)
+* [Devolve (Wild)](https://hearthstone.gamepedia.com/Devolve)
+***
+*You can find and download those resources from the following URLs:*
 
-**NOTE**: In this project you can find both statistics about Standard and Wild Format.
+* [Full Report](https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Reports/REPORT.md)
+* [Plots](https://github.com/RottenCrab/HearthstoneStatistics/tree/master/Plots)
+* [Minion Spreadsheets](https://github.com/RottenCrab/HearthstoneStatistics/tree/master/Spreadsheets)
 
-#### Future Card Statistics
-
-Soon, I will upload statistical plots for the following cards:
-* [Evolve](https://hearthstone.gamepedia.com/Evolve)
-* [Unstable Evolution](https://hearthstone.gamepedia.com/Unstable_Evolution)
-* [Devolve](https://hearthstone.gamepedia.com/Devolve)
-* [Mutate](https://hearthstone.gamepedia.com/Mutate)
-
- Future goal is to present statistcs about cards with **Discover** Keyword
+***
 
 ### Clone or Download HearthstoneStatistics
-Since, I am still working on this Project's Structure I would not recommend you to clone and run any of those scripts. Soon, I will update this section with detailed instructions on how to clone and run this code locally on you computer.
-
-*For now, you can go ahead and download the plots from [here](https://github.com/RottenCrab/HearthstoneStatistics/tree/master/Plots) or from my [twitter](https://twitter.com/rottencrab_dev)*
+Since, I am still working on this Repository's Structure I would not recommend you to clone and run any of those scripts. Soon, I will update this section with detailed instructions on how to clone and run this code locally on you computer.
 
 ### Contributing to HearthstoneStatistics
-If you want to contribute to HearthstoneStatics feel free to make a pull request or even contact me through email or twitter (see contact section below)
+If you want to contribute to HearthstoneStatics feel free to make a pull request or even contact me through email or twitter (see contact section below). Preferably, I would like get some help reorganize and refactore some blocks of code in order to make it more generic.
 
 ### Contact 
 
