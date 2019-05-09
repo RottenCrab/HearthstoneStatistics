@@ -1,4 +1,4 @@
-# Hearthstone Report : Minion Distribution per Mana Cost
+# Hearthstone Cheatsheet : Minion Distribution per Mana Cost (Constructed Report)
 ****
 **Current Hearthstone Year:** [*Year of the Dragon*](https://hearthstone.gamepedia.com/Standard_format#Year_of_the_Dragon)
 
