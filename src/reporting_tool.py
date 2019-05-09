@@ -21,6 +21,15 @@ def constructed_reporting(total_card_pool_standard,
 
 
 def arena_reporting(total_card_pool_arena):
-    pass
+    template_dictionary = read_json('arena_image_urls.json',
+                                    json_key='all_keys')
+    template_dictionary['total_card_pool_arena'] = total_card_pool_arena
+    filein = open('../Templates/ARENA_REPORT_TEMPLATE.md')
+    out = open('../Reports/ARENA_REPORT.md', 'w')
+    src = Template(filein.read())
+    result = src.safe_substitute(template_dictionary)
+    out.write(result)
+    filein.close()
+    out.close()
 
 # end of file

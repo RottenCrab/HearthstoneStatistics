@@ -56,9 +56,9 @@ def report_run():
                           show=True,
                           save=True)
             card_pool_obj[hs_format].generate_xlsx_file(keyword)
-    # constructed_reporting(card_pool_obj['standard_format'].total_card_pool,
-    #                       card_pool_obj['wild_format'].total_card_pool)
-    # arena_reporting(card_pool_obj['arena'].total_card_pool)
+    constructed_reporting(card_pool_obj['standard_format'].total_card_pool,
+                          card_pool_obj['wild_format'].total_card_pool)
+    arena_reporting(card_pool_obj['arena'].total_card_pool)
 
 
 if __name__ == '__main__':
