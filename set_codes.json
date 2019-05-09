@@ -20,5 +20,14 @@
       "jtug": "Journey to Un'Goro",
       "kft": "Knights of the Frozen Throne",
       "k&c": "Kobolds & Catacombs"
+  },
+  "arena_sets": {
+      "bsc": "Basic",
+      "cls": "Classic",
+      "con": "Naxxramas",
+      "wog": "Whispers of the Old Gods",
+      "msg": "Mean Streets of Gadgetzan",
+      "tww": "The Witchwood",
+      "ros": "Rise of Shadows"
   }
 }
