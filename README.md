@@ -5,7 +5,7 @@ I decided to create this Project to demonstrate Statistics like these (using sim
 
 ## How to Use
 
-In this Repository you can find Reports, Plots and Spreadsheets which contain information about the distribution of minions per Mana Cost (from 0 Mana Cost up to 12 Mana Cost, since 20 and 25 Mana Cost cards cannot be generated through any current cards) in both Standard and Wild Format which are easy to understand. Then you can utilize those resources in order to be aware of:
+In this Repository you can find Reports, Plots and Spreadsheets which contain information about the distribution of minions per Mana Cost (from 0 Mana Cost up to 12 Mana Cost, since 20 and 25 Mana Cost cards cannot be generated through any current cards) in both **Standard** and **Wild** Format which are easy to understand. Then you can utilize those resources in order to be aware of:
  
 * Average Minion Stats per Mana Cost (what you stats you should expect when you summon a random minion of a certain Mana Cost)
 * Total Collectible Minions per Mana Cost
@@ -29,7 +29,8 @@ Having all information mentioned above can help you play your outs better when i
 ***
 *You can find and download those resources from the following URLs:*
 
-* [Full Report](https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Reports/REPORT.md)
+* [Full Constructed Report](https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Reports/CONSTRUCTED_REPORT.md)
+* [Full Arena Report](https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Reports/ARENA_REPORT.md)
 * [Plots](https://github.com/RottenCrab/HearthstoneStatistics/tree/master/Plots)
 * [Minion Spreadsheets](https://github.com/RottenCrab/HearthstoneStatistics/tree/master/Spreadsheets)
 
