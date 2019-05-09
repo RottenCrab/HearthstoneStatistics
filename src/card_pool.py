@@ -14,10 +14,12 @@ class CardPool:
     valid_formats = [
         'standard_format',
         'wild_format',
+        'arena'
     ]
     mana_costs = list(range(0, 13))
     STD_FORMAT = 'standard_format'
     WILD_FORMAT = 'wild_format'
+    ARENA = 'arena'
     # DataFrame's Column selection filters
     COLUMN_FILTERS = ['cost',  # card's mana cost
                       'name',  # card's name
@@ -31,6 +33,10 @@ class CardPool:
                       'text',  # card's text
                       'img'  # card's image link
                       ]
+    # arena filters
+    ARENA_FILTERS = 'arena_filters.json'
+    # arena filter key
+    ARENA_KEY = 'arena_filters'
     # keyword filters project file
     KEYWORD_FILTERS = 'dataset_filters.json'
     # JSON key for taunt minion filters
@@ -58,13 +64,21 @@ class CardPool:
             return True
         return False
 
+    def __is_arena_format(self):
+        if self.hs_format == CardPool.ARENA:
+            return True
+        return False
+
     def __build_dataframe(self):
         cards_df = pd.DataFrame()
         dataset = {}
         if self.__is_std_format():
             dataset = card_collector.collect_std_sets()
         else:
-            dataset = card_collector.collect_wild_sets()
+            if self.__is_arena_format():
+                dataset = card_collector.collect_arena_sets()
+            else:
+                dataset = card_collector.collect_wild_sets()
         for key, value in dataset.items():
             cards_df = cards_df.append(pd.DataFrame(data=value),
                                        ignore_index=True,
@@ -72,6 +86,8 @@ class CardPool:
         cards_df = cards_df[CardPool.COLUMN_FILTERS]
         card_pool = cards_df[cards_df['type'] == 'Minion']
         card_pool.fillna(value=CardPool.nan_replacements, inplace=True)
+        if self.__is_arena_format():
+            return self.__arena_filtering(card_pool)
         return card_pool
 
     def __dataframe_length(self, dataframe):
@@ -83,6 +99,13 @@ class CardPool:
         for flt in filters:
             filtered_pool = filtered_pool[~filtered_pool.name.str.contains(flt, case=False)]
         return filtered_pool
+
+    def __arena_filtering(self, dataframe):
+        filters = read_json(CardPool.ARENA_FILTERS,
+                            json_key=CardPool.ARENA_KEY)
+        for flt in filters:
+            dataframe = dataframe[~dataframe.name.str.contains(flt, case=False)]
+        return dataframe
 
     def __pool_selection(self, keyword):
         if keyword.lower() == 'taunt':

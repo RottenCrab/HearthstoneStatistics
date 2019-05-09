@@ -1,5 +1,6 @@
 from card_pool import CardPool
-from reporting_tool import reporting
+from reporting_tool import (constructed_reporting,
+                            arena_reporting)
 from plotting import (avg_stats,
                       probabilities,
                       minion_distribution)
@@ -14,12 +15,14 @@ def report_run():
 
     formats = [
         'standard_format',
-        'wild_format'
+        'wild_format',
+        'arena'
     ]
 
     card_pool_obj = {
         'standard_format': CardPool(formats[0]),
-        'wild_format': CardPool(formats[1])
+        'wild_format': CardPool(formats[1]),
+        'arena': CardPool(formats[2])
     }
 
     for hs_format in formats:
@@ -53,8 +56,9 @@ def report_run():
                           show=True,
                           save=True)
             card_pool_obj[hs_format].generate_xlsx_file(keyword)
-    reporting(card_pool_obj['standard_format'].total_card_pool,
-              card_pool_obj['wild_format'].total_card_pool)
+    # constructed_reporting(card_pool_obj['standard_format'].total_card_pool,
+    #                       card_pool_obj['wild_format'].total_card_pool)
+    # arena_reporting(card_pool_obj['arena'].total_card_pool)
 
 
 if __name__ == '__main__':

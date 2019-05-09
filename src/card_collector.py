@@ -11,6 +11,7 @@ API_KEY = 'api_key.json'
 SET_CODES = 'set_codes.json'
 STD_SETS = 'standard_sets'
 WILD_SETS = 'wild_sets'
+ARENA_SETS = 'arena_sets'
 
 
 def retrieve_std_sets():
@@ -35,6 +36,10 @@ def retrieve_wild_sets():
     return wild_sets  # A Dictionary which holds both Wild Exclusive and Standard Sets
 
 
+def retrieve_arena_sets():
+    return read_json(SET_CODES, json_key=ARENA_SETS)
+
+
 def collect_cards(card_codes):
     caller = Caller(API_HOST,
                     API_KEY)
@@ -50,5 +55,9 @@ def collect_std_sets():
 
 def collect_wild_sets():
     return collect_cards(retrieve_wild_sets())
+
+
+def collect_arena_sets():
+    return collect_cards(retrieve_arena_sets())
 
 # end of file
