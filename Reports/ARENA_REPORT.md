@@ -33,47 +33,47 @@ After reading this report you will be able to answer the question above easily!
 ### 1. Average Minion Stats Per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/avg_stats_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/avg_stats_arena.png">
 </p>
 
 ### 2. Total Minions per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/total_minions_per_mana_cost_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/total_minions_per_mana_cost_arena.png">
 </p>
 
 ### 3. Total Taunts per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/taunt_minions_per_mana_cost_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/taunt_minions_per_mana_cost_arena.png">
 </p>
 
 ### 4. Total Rush per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/rush_minions_per_mana_cost_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/rush_minions_per_mana_cost_arena.png">
 </p>
 
 ### 5. Total Charge per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/charge_minions_per_mana_cost_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/charge_minions_per_mana_cost_arena.png">
 </p>
 
 ### 6. Taunt Probability Per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/taunt_probability_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/taunt_probability_arena.png">
 </p>
 
 ### 7. Rush Probability Per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/rush_probability_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/rush_probability_arena.png">
 </p>
 
 ### 8. Charge Probability Per Mana Cost (Arena):
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/charge_probability_arena.png">
+  <img width="640" height="480" src="https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/charge_probability_arena.png">
 </p>
