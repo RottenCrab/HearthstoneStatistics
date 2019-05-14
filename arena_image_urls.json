@@ -1,10 +1,10 @@
 {
-  "avg_stats_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/avg_stats_arena.png",
-  "charge_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/charge_minions_per_mana_cost_arena.png",
-  "charge_probability_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/charge_probability_arena.png",
-  "rush_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/rush_minions_per_mana_cost_arena.png",
-  "rush_probability_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/rush_probability_arena.png",
-  "taunt_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/taunt_minions_per_mana_cost_arena.png",
-  "taunt_probability_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/taunt_probability_arena.png",
-  "total_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/arena/Plots/total_minions_per_mana_cost_arena.png"
+  "avg_stats_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/avg_stats_arena.png",
+  "charge_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/charge_minions_per_mana_cost_arena.png",
+  "charge_probability_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/charge_probability_arena.png",
+  "rush_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/rush_minions_per_mana_cost_arena.png",
+  "rush_probability_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/rush_probability_arena.png",
+  "taunt_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/taunt_minions_per_mana_cost_arena.png",
+  "taunt_probability_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/taunt_probability_arena.png",
+  "total_minions_per_mana_cost_arena": "https://github.com/RottenCrab/HearthstoneStatistics/blob/master/Plots/total_minions_per_mana_cost_arena.png"
 }
