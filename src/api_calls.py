@@ -32,4 +32,18 @@ class Caller:
         response_data = response.json()
         return response_data
 
+    def single_card_call(self, hearthstone_card,
+                         collectibles_only=True):
+        ENDPOINT = 'https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/'
+        COLLECTIBLES = '?collectible='
+        if collectibles_only:
+            col_code = '1'
+        else:
+            col_code = '0'
+        response = get(ENDPOINT + hearthstone_card + COLLECTIBLES + col_code,
+                       headers=self.headers)
+        response_data = response.json()
+        return response_data
+
+
 # end of file
