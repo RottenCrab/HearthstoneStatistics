@@ -86,8 +86,6 @@ class CardPool:
         cards_df = cards_df[CardPool.COLUMN_FILTERS]
         card_pool = cards_df[cards_df['type'] == 'Minion']
         card_pool.fillna(value=CardPool.nan_replacements, inplace=True)
-        if self.__is_arena_format():
-            return self.__arena_filtering(card_pool)
         return card_pool
 
     def __dataframe_length(self, dataframe):
@@ -126,6 +124,8 @@ class CardPool:
 
     @property
     def total_card_pool(self):
+        if self.__is_arena_format():
+            return self.__dataframe_length(self.__arena_filtering(self.card_pool))
         return self.__dataframe_length(self.card_pool)
 
     @property
