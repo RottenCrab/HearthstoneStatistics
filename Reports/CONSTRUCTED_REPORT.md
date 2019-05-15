@@ -18,8 +18,8 @@ After reading this report you will be able to answer the question above easily!
 
 
 ### Total Collectible Minions:
-    Standard Format: 583
-    Wild Format: 1378
+    Standard Format: 584
+    Wild Format: 1379
 
 ### 1. Average Minion Stats Per Mana Cost (Standard):
 
