@@ -31,6 +31,7 @@ The following Minions cannot be drafted in Arena Format, thus they are excluded 
 * [Gloom Stag](http://media.services.zam.com/v1/media/byName/hs/cards/enus/GIL_130.png) 
 * [Murkspark Eel](http://media.services.zam.com/v1/media/byName/hs/cards/enus/GIL_530.png) 
 * [Whizbang the Wonderful](http://media.services.zam.com/v1/media/byName/hs/cards/enus/BOT_914.png) 
+* [Zayle, Shadow Cloak](http://media.services.zam.com/v1/media/byName/hs/cards/enus/DAL_800.png) 
 
 ***
  NOTE: Some of the Card Image URLs may not work properly due to HearthstoneAPI 
