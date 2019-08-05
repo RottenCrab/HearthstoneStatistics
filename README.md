@@ -1,3 +1,7 @@
+# Author's Note
+
+**From now on (6 August 2019) I stopped supporting this Repository (due to its bad coding aspect) and I will keep uploading new content about Hearthstone Statistics and Plots at this Repository: [HearthVizualizer](https://github.com/RottenCrab/HearthVizualizer). Make sure you check it out! Thank you!**
+
 ## Hearthstone Statistics
 Since the release of [Rise of Shadows](https://playhearthstone.com/en-us/expansions-adventures/rise-of-shadows/) [Hearhtstone expansion](https://playhearthstone.com/en-us/) I have noticed that many players are wondering the odds of getting a Taunt, Rush, Charge or even Deathrattle Minion from Conjurer's Calling Mage Spell. Then, I remembered that back in the day when Evolve (also Unstable Evolution and now Mutate is introduced to the Standard Format) was a Standard Card players were facing the same issue. Knowing the chances of summoning a random minion with a certain keyword on each Mana Cost sometimes may win you the game.
 
