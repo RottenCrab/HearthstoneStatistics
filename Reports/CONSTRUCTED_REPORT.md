@@ -1,3 +1,7 @@
+# Author's Note
+
+**From now on (6 August 2019) I stopped supporting this Repository (due to its bad coding aspect) and I will keep uploading new content about Hearthstone Statistics and Plots at this Repository: [HearthVizualizer](https://github.com/RottenCrab/HearthVizualizer). Make sure you check it out! Thank you!**
+
 # Hearthstone Cheatsheet : Minion Distribution per Mana Cost (Constructed Report)
 ****
 **Current Hearthstone Year:** [*Year of the Dragon*](https://hearthstone.gamepedia.com/Standard_format#Year_of_the_Dragon)
